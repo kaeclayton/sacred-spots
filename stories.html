@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Stops: Temple Stories</title>
+    <meta name="author" content="Kae Clayton">
+    <meta name="description" content="A site with stories of the temples that have been visited">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/stories.css">
+    <script src="scripts/stories.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Stories & Experiences</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Temple Gallery</a>
+            <a href="stories.html" class="active">Stories</a>
+            <a href="future.html">Future Visits</a>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="story-filters">
+            <div class="filter-group">
+                <label for="temple-filter">Filter by Temple:</label>
+                <select id="temple-filter">
+                    <option value="all">All Temples</option>
+                    <!-- Options added by JavaScript -->
+                </select>
+            </div>
+            <div class="filter-group">
+
+            </div>
+        </section>
+
+        <div class="stories-container" id="stories-list">
+            <!-- Stories will be inserted here by JavaScript -->
+            <div class="loading">Loading stories...</div>
+        </div>
+        
+        <section class="add-story">
+            <h2>Have You Been to One of These Temples?</h2>
+            <h2>Share Your Experience</h2>
+            <form id="story-form">
+                <div class="form-group">
+                    <label for="story-temple">Temple: *</label>
+                    <select id="story-temple" required>
+                        <!-- Options will be added by JavaScript -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="story-title">Visit Date: (optional)</label>
+                    <input type="date" id="story-date">
+                </div>
+                <div class="form-group">
+                    <label for="story-title">Title: *</label>
+                    <input type="text" id="story-title" placeholder="A Special Day in Salt Lake" required>
+                </div>
+                <div class="form-group">
+                    <label for="story-content">Your Story: *</label>
+                    <textarea id="story-content" rows="6" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="story-photos">Upload Photos: (optional)</label>
+                    <input type="file" id="story-photos" multiple accept="image/*">
+                </div>
+                <button type="submit">Share Story</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Sacred Stops</h3>
+                <p>A personal journal of temple experiences and reflections</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="stories.html">Stories</a>
+                <a href="future.html">Future Visits</a>
+            </div>
+        </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; <span id="current-year"></span> Kae Clayton. All rights reserved.</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

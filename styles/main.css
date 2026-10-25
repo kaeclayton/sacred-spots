@@ -1,0 +1,132 @@
+:root {
+    --jade: #00603F;
+    --charcoal: #333333;
+    --cream: #FCFCEF;
+    --plum: #6A0DAD;
+    --soft-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: var(--charcoal);
+    background-color: var(--cream);
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 0;
+}
+
+h1 {
+    color: var(--cream);
+    font-style: italic;
+}
+
+h2,
+h3 {
+    color: var(--jade);
+    border-bottom: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+header {
+    background-color: var(--plum);
+    color: var(--cream);
+    box-shadow: var(--soft-shadow);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 1rem;
+}
+
+header nav a {
+    color: var(--cream);
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+}
+
+header nav a:hover {
+    opacity: 0.8;
+}
+
+header nav a.active {
+    border-bottom: 2px solid var(--cream);
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Gallery Container */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Temple Card Content Styling */
+.temple-card h3 {
+    color: var(--plum);
+    text-align: center;
+    margin: 1rem 1rem 0.5rem;
+    font-size: 1.25rem;
+}
+
+.temple-card-back h3 {
+    color: var(--plum);
+    margin: 0 0 1rem 0;
+    padding: 0 0.5rem;
+    text-align: center;
+}
+.temple-card-front p {
+    color: var(--jade);
+    text-align: center;
+}
+.temple-card-back p {
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.temple-features {
+    margin-top: 1rem;
+    padding: 0 0.5rem;
+}
+
+.temple-features ul {
+    padding-left: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.temple-features li {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+a,
+button {
+    min-height: 48px;
+    min-width: 48px;
+}

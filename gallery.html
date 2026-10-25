@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Stops: Temple Gallery</title>
+    <meta name="author" content="Kae Clayton">
+    <meta name="description" content="A site with stories of the temples that have been visited">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/temple-card.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>My Visited Temple Gallery</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html" class="active">Temple Gallery</a>
+            <a href="stories.html">Stories</a>
+            <a href="future.html">Future Visits</a>
+        </nav>
+    </header>
+    <div class="gallery-container">
+        <div class="temple-card" data-id="1">
+            <img src="images/salt-lake-temple.webp" alt="Salt Lake Temple" loading="lazy" onerror="this.src='images/salt-lake-temple.jpg'">
+            <h3>Salt Lake Temple</h3>
+            <p>Salt Lake City, Utah</p>
+        </div>
+        <div class="temple-card" data-id="2">
+            <img src="images/st-george-temple.webp" alt="St. George Temple" loading="lazy" onerror="this.src='images/st-george-temple.jpg'">
+            <h3>St. George Temple</h3>
+            <p>St. George, Utah</p>
+        </div>
+        <div class="temple-card" data-id="3">
+            <img src="images/logan-utah-temple.webp" alt="Logan Utah Temple" loading="lazy" onerror="this.src='images/logan-utah-temple.jpg'">
+            <h3>Logan Utah Temple</h3>
+            <p>Logan, Utah</p>
+        </div>
+        <div class="temple-card" data-id="4">
+            <img src="images/oquirrh-mountain-temple.webp" alt="Oquirrh Mountain Temple" loading="lazy" onnerror="this.src='images/oquirrh-mountain-temple.jpg'">
+            <h3>Oquirrh Mountain Temple</h3>
+            <p>South Jordan, Utah</p>
+        </div>
+        <div class="temple-card" data-id="5">
+            <img src="images/draper-utah-temple.webp" alt="Draper Utah Temple" loading="lazy" onnerror="this.src='images/draper-utah-temple.jpg'">
+            <h3>Draper Utah Temple</h3>
+            <p>Draper, Utah</p>
+        </div>
+        <div class="temple-card" data-id="6">
+            <img src="images/jordan-river-temple.webp" alt="Jordan River Temple" loading="lazy" onnerror="this.src='images/jordan-river-temple.jpg'">
+            <h3>Jordan River Temple</h3>
+            <p>South Jordan, Utah</p>
+        </div>
+        <div class="temple-card" data-id="7">
+            <img src="images/mount-timpanogos-temple.webp" alt="Mount Timpanogos Utah Temple" loading="lazy" onnerror="this.src='images/mount-timpanogos-temple.jpg'">
+            <h3>Mount Timpanogos Utah Temple</h3>
+            <p>American Fork, Utah</p>
+        </div>
+        <div class="temple-card" data-id="8">
+            <img src="images/bountiful-utah-temple.webp" alt="Bountiful Utah Temple" loading="lazy" onnerror="this.src='images/bountiful-utah-temple.jpg'">
+            <h3>Bountiful Utah Temple</h3>
+            <p>Bountiful, Utah</p>
+        </div>
+        <div class="temple-card" data-id="9">
+            <img src="images/ogden-utah-temple.webp" alt="Ogden Utah Temple" loading="lazy" onnerror="this.src='images/ogden-utah-temple.jpg'">
+            <h3>Ogden Utah Temple</h3>
+            <p>Ogden, Utah</p>
+        </div>
+        <div class="temple-card" data-id="10">
+            <img src="images/provo-utah-temple.webp" alt="Provo Utah Temple" loading="lazy" onnerror="this.src='images/provo-utah-temple.jpg'">
+            <h3>Provo Utah Temple</h3>
+            <p>Provo, Utah</p>
+        </div>
+        <div class="temple-card" data-id="11">
+            <img src="images/denver-colorado-temple.webp" alt="Denver Colorado Temple" loading="lazy" onnerror="this.src='images/denver-colorado-temple.jpg'">
+            <h3>Denver Colorado Temple</h3>
+            <p>Centennial, Colorado</p>
+        </div>
+        <div class="temple-card" data-id="12">
+            <img src="images/gilbert-arizona-temple.webp" alt="Gilbert Arizona Temple" loading="lazy" onnerror="this.src='images/gilbert-arizona-temple.jpg'">
+            <h3>Gilbert Arizona Temple</h3>
+            <p>Gilbert, Arizona</p>
+        </div>
+        <div class="temple-card" data-id="13">
+            <img src="images/laie-hawaii-temple.webp" alt="Laie Hawaii Temple" loading="lazy" onnerror="this.src='images/laie-hawaii-temple.jpg'">
+            <h3>Laie Hawaii Temple</h3>
+            <p>Laie, Hawaii</p>
+        </div>
+        <div class="temple-card" data-id="14">
+            <img src="images/mesa-arizona-temple.webp" alt="Mesa Arizona Temple" loading="lazy" onnerror="this.src='images/mesa-arizona-temple.jpeg'">
+            <h3>Mesa Arizona Temple</h3>
+            <p>Mesa, Arizona</p>
+        </div>
+        <div class="temple-card" data-id="15">
+            <img src="images/newport-beach-temple.webp" alt="Newport Beach California Temple" loading="lazy" onnerror="this.src='images/newport-beach-temple.jpg'">
+            <h3>Newport Beach California Temple</h3>
+            <p>Newport Beach, California</p>
+        </div>
+        <div class="temple-card" data-id="16">
+            <img src="images/orlando-florida-temple.webp" alt="Orlando Florida Temple" loading="lazy" onnerror="this.src='images/orlando-florida-temple.jpg'">
+            <h3>Orlando Florida Temple</h3>
+            <p>Windermere, Florida</p>
+        </div>
+        <div class="temple-card" data-id="17">
+            <img src="images/portland-oregon-temple.webp" alt="Portland Oregon Temple" loading="lazy" onnerror="this.src='images/portland-oregon-temple.jpg'">
+            <h3>Portland Oregon Temple</h3>
+            <p>Lake Oswego, Oregon</p>
+        </div>
+        <div class="temple-card" data-id="18">
+            <img src="images/washington-dc-temple.webp" alt="Washington DC Temple" loading="lazy" onnerror="this.src='images/washington-dc-temple.jpeg'">
+            <h3>Washington DC Temple</h3>
+            <p>Kensington, Maryland</p>
+        </div>
+        <div class="temple-card" data-id="19">
+            <img src="images/san-diego-temple.webp" alt="San Diego California Temple" loading="lazy" onnerror="this.src='images/san-diego-temple.jpg'">
+            <h3>San Diego California Temple</h3>
+            <p>San Diego, California</p>
+        </div>
+
+        <div class="temple-card" data-id="20">
+            <img src="images/columbia-south-carolina-temple.webp" alt="Columbia South Carolina Temple" loading="lazy" onnerror="this.src='images/columbia-south-carolina-temple.jpg'">
+            <h3>Columbia South Carolina Temple</h3>
+            <p>Hopkins, South Carolina</p>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Sacred Stops</h3>
+                <p>A personal journal of temple experiences and reflections</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="stories.html">Stories</a>
+                <a href="future.html">Future Visits</a>
+            </div>
+        </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; <span id="current-year"></span> Kae Clayton. All rights reserved.</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

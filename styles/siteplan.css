@@ -1,0 +1,136 @@
+:root {
+    --jade: #00603F;
+    --charcoal: #333333;
+    --cream: #FCFCEF;
+    --plum: #6A0DAD;
+    --soft-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: var(--charcoal);
+    background-color: var(--cream);
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 0;
+}
+
+h1 {
+    color: var(--cream);
+    font-style: italic;
+}
+
+h2, h3 {
+    color: var(--jade);
+    border-bottom: none;
+}
+
+a {
+    color: var(--jade);
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+header {
+    background-color: var(--plum);
+    color: var(--cream);
+    box-shadow: var(--soft-shadow);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-right: 1rem;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.color-box.jade {
+    background-color: var(--jade);
+}
+
+.color-box.charcoal {
+    background-color: var(--charcoal);
+}
+
+.color-box.cream {
+    background-color: var(--cream);
+    border: 1px solid var(--charcoal);
+}
+
+.color-box.plum {
+    background-color: var(--plum);
+    border: 1px solid var(--charcoal)
+}
+
+.wireframe-preview {
+    background-color: var(--cream);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: var(--soft-shadow);
+    margin-bottom: 2rem;
+}
+
+.wireframe-mobile,
+.wireframe-desktop {
+    background-color: rgba(0,96,63,0.05);
+    padding: 1rem;
+    border: 1px dashed var(--jade);
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .wireframe-desktop {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        gap: 2rem;
+    }
+
+    .wireframe-desktop .sidebar {
+        background-color: var(--jade);
+        opacity: 0.1;
+        padding: 1rem;
+    }
+
+    .wireframe-desktop .main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .wireframe-desktop .temple-card {
+        background-color: white;
+        border-radius: 4px;
+        padding: 0.5rem;
+        box-shadow: var(--soft-shadow);
+    }
+}
+
+.text-center {
+    text-align: center;
+}

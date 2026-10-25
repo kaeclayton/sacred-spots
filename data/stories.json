@@ -1,0 +1,144 @@
+[
+    {
+        "id": "slc-1",
+        "templeId": 1,
+        "title": "First Temple Experience",
+        "content": "I have always loved the Salt Lake Temple.  This meant that when it was time for me to go through for the first time, this was the temple I wanted to do that in.  It was a very special moment.  My bishop knew that I was ready to go through the temple even though I had almost a year before I would go on a mission.  He let me get my recommend so that I could go through at the same time my brothers, Josh and Jer, went through before thier mission.  "
+    },
+    {
+        "id": "slc-2",
+        "templeId": 1,
+        "date": "1999-05-22",
+        "title": "My Wedding",
+        "content": "It was May 22, 1999.  A beautiful sunny morning.  Our ceremony was early morning, I want to say at 7:30 am.  Brad and I didn't care, we were just excited to be getting married.  I remember getting to sit with him in the celestial room before we went into the sealing room to get sealed for time and all eternity.  I loved the peace I felt as I held his hand.  My sweet hubby."
+    },
+    {
+        "id": "stg",
+        "templeId": 2,
+        "title": "Finally!",
+        "content": "If I have to choose a favorite temple growing up it would be the St. George Temple.  Al Rounds, an artist, did a painting that I saw when I was young with the white structure standing out in front of the red cliffs of St. George.  I have been hooked ever since.  Over my lifetime I have tried to get to the St. George Temple, on my honeymoon was the first real opportunity, but every time I have been there to go it has been closed for cleaning, or it was closed for rennovation.  This past May I was finally able to go.  It was an extremely spiritual experience for me, sacred even, so I won't share all the details.  But what I can tell you is that I cried for over an hour upon stepping through the threshold of the temple.  Tears streaming down my face as I dressed in white and went through initiatories.  Beautiful experience."
+    },
+    {
+        "id": "logan",
+        "templeId": 3,
+        "title": "College Temple",
+        "content": "I can vaguely remember the first time I went to the Logan Utah Temple.  Being that it is another historic temple I have always loved it.  I have a soft spot for beautiful historic buildings.  I loved checking out all the amazing crasftmanship in all the interior rooms I got to see.  Quite a stunning temple."
+    },
+    {
+        "id": "oquirrh",
+        "templeId": 4,
+        "date": "2025-05-13",
+        "title": "Jamison's Endowment",
+        "content": "I got a sweet two for one travel experience with the Oquirrh Mountain Temple one day and the Draper Temple the next.  I travelled to Utah to go to my niece's wedding and got to go to the Oquirrh Mountain temple the day before to go through with my nephew on his first temple endowment experience."
+    },
+    {
+        "id": "draper",
+        "templeId": 5,
+        "date": "2025-05-14",
+        "title": "Makenna's Wedding",
+        "content": "What a way to experience a temple, going to it for a wedding.  My niece Makenna got married May 14, 2025 and I got to go be there for it.  One of the most amazing things about this temple is the views you have from the grounds, you can see the whole Salt Lake valley!"
+    },
+    {
+        "id": "jordan",
+        "templeId": 6,
+        "title": "Early Childhood Memory",
+        "content": "This is a short memory because I don't remember much, but I do remember going to the open house for the Jordan River Temple.  Most of what I remember was being outside the massive structure with my siblings."
+    },
+    {
+        "id": "timp",
+        "templeId": 7,
+        "title": "Late Night Temple",
+        "content": "The Mount Timpanogos Temple was dedicated just after I recieved my endowment and before I went on my mission.  It was a big deal to have a new temple, so one night my friends and I went down to do a session.  It was packed!  We ended up waiting more than two hours just to get into the chapel where they take you into the endowment room and it was already past 8:00.  For many weeks after the dedication of this temple they ran sessions late into the night to accomodate all those wanting to serve there."
+    },
+    {
+        "id": "bountiful",
+        "templeId": 8,
+        "date": "1999-02-13",
+        "title": "Dani's Wedding",
+        "content": "Dani got married in the Bountiful Utah Temple on February 13, 1999.  Dani is one of my best friends and the person I met my husband Brad through.  I remember wondering why they chose the Bountiful temple, but it wasn't hard to guess, this is a beautiful temple.  I remember all the plants and flowers outside were gorgeous."
+    },
+    {
+        "id": "Ogden",
+        "templeId": 9,
+        "title": "Temple Challenge",
+        "content": "I honestly don't remember much about my visit to the Ogden temple.  It was in the time before my mission.  I had given myself the challenge to go to all the temples in Utah before my mission.  I didn't make it to the St. George temple and I'm not sure I made it up to Logan, but I did make it to the Ogden Temple.  I probably went with Mark Wride because he was my temple buddy before the mission."
+    },
+    {
+        "id": "provo",
+        "templeId": 10,
+        "title": "MTC Temple",
+        "content": "I got to go to the Provo temple several times as a new missionary while I was in the MTC.  I remember being with Sister Larsen, my MTC companion, who I would also later be companions with at the end of our missions.  The thing that struck me most about this temple was the HUGE picture of Christ that was in the celestial room."
+    },
+    {
+        "id": "Denver",
+        "templeId": 11,
+        "title": "First Temple Outside of Utah",
+        "content": "When Brad and I were first married we lived with my in-laws.  So during those few months we went to the Denver Temple.  This was my first time being in a temple outside of Utah and I loved it.  One thing that made this temple special to me was that it was close to where Allison, my adopted sister, lived with her family.  They attended the open house to see inside it before it was dedicated."
+    },
+    {
+        "id": "gilbert",
+        "templeId": 12,
+        "title": "Temple Celebration",
+        "content": "The Gilbert Temple holds a special place in my heart because of many reasons.  One is that it was built while I lived here and my kids got to go through the open house, my son participated in the youth celebration just before it was dedicated and it is where he recieved his endowment."
+    },
+    {
+        "id": "laie",
+        "templeId": 13,
+        "title": "Hawaiian Paradise",
+        "content": "We were on a family vacation to Oahu when Brad and I got the chance to sneak away to the Laie Temple.  Driving up toward the temple was awe inspiring.  Hawaii is just one of my favorite places and you add a temple to the paradise and it is perfection.  I really enjoyed the extra laid back yet spiritual atmosphere, so calming."
+    },
+    {
+        "id": "mesa-1",
+        "templeId": 14,
+        "title": "Crystal Chandeliers",
+        "content": "During the renovation of the Mesa Temple I was invited to go and help put the crystals in the chandeliers in two of the sealing rooms.  My good friend Jean Porter invited me to come.  Her son was in charge of the construction on the temple so she got the special priviledge to participate in some of the decorating.  The chandeliers were gold in color and the crystals were Swarovski crystals.  It was really intricate work.  It has been so much fun to go back and see where I participated in the beautification of that temple."
+    },
+    {
+        "id": "mesa-2",
+        "templeId": 14,
+        "title": "English Family Sealing",
+        "content": "I had the privledge of being part of the sealing of Joan and Ray English to each other and to their son Caleb.  It was such a beautiful ceremony.  I will never forget the hug I got from Joan afterwards and how she told me she loved my smile.  Meant the world to me to be able to participate in that event."
+    },
+    {
+        "id": "mesa-3",
+        "templeId": 14,
+        "title": "Temple Rededication Open House",
+        "content": "Another memorable experience I have had at the Mesa Arizona Temple was that of going to the open house they had after the renovation was done.  It was late November, early December of 2021.  We went with mom and dad and Allison.  I think Shannon and Josh were there and I vaguely remember Brad having one of his friends with him as well.  I was in a wheelchair cause my feet were still being stupid and I couldn't walk that far.  So I didn't get to see some parts of the temple that aren't as wheelchair friendly.  But I was with mom and dad and I am so grateful for that memory, especially with dad."
+    },
+    {
+        "id": "newport",
+        "templeId": 15,
+        "title": "Foy Wedding",
+        "content": "I don't remember why I went out to attend my cousin's wedding.  I can't remember if it was Brooks or Brody.  One thing I do remember about going was how beautiful the temple was, also the location was so great.  I love being in the temple in beautiful places."
+    },
+    {
+        "id": "orlando",
+        "templeId": 16,
+        "title": "Oh Orlando",
+        "content": "I loved the Orlando Temple.  Brad and I were in Florida for a vacation/work opportunity.  We stopped at the temple on our way from Daytona to Tampa.  What I loved most about it was the decor, purple!  I loved that the interior had purple as one of it's colors."
+    },
+    {
+        "id": "portland",
+        "templeId": 17,
+        "title": "Rainy Day Temple Visit",
+        "content": "I'm sure it comes as no surprise that it was raining in Portland on the day I visited the temple.  It was like that hazy kind of rain, where there is water everywhere in the air, but not big droplets, so it almost looks foggy.  I was traveling with Brad on a business trip of his and we went to the temple.  It was wonderful of course."
+    },
+    {
+        "id": "dc",
+        "templeId": 18,
+        "title": "Washington Wonder",
+        "content": "The Washington DC Temple is breathtaking.  We had decided to do an east coast trip for the summer of 2008.  Isaak wanted to see the Statue of Liberty, he chose that over going to Disney World.  So we went to Delaware, Philadelphia, New York City and Washington DC.  I remember driving on the freeway and coming up on it, what a sight!  Brad and I went and did a session, but I don't remember what we did with Isaak and Mica, my guess is that Georgann watched them."
+    },
+    {
+        "id": "diego",
+        "templeId": 19,
+        "title": "Princess in a Castle",
+        "content": "The San Diego Temple is like a castle from a fantasy novel.  The day Brad and I visited was a beautiful day.  I'm pretty sure we were in San Diego because later that evening we were going to get on the boat to go to Guadalupe Island to see the great white sharks.  I have always heard good things about this temple and it did not dissapoint.  The exterior was stunning and Brad and I could not stop taking pictures from multiple angles.  The interior is no less impressive.  The part I loved the most was the celestial room, it was HUGE and two-stories!  Just absolutely stunning temple."
+    },
+    {
+        "id": "columbia-sc",
+        "templeId": 20,
+        "title": "Military Moment",
+        "content": "I loved the Columbia South Carolina Temple.  It holds a special place in my heart.  Brad did his basic and AIT training for the Army National Guard in Columbia at Fort Jackson.  When he graduated basic training I went out to visit him and during some of his leave time we went over to the temple.  It was the first small temple I went to.  I loved how intimate it was with about a dozen people there.  It felt like home."
+    }
+]
