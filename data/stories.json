@@ -3,7 +3,7 @@
         "id": "slc-1",
         "templeId": 1,
         "title": "First Temple Experience",
-        "content": "I have always loved the Salt Lake Temple.  This meant that when it was time for me to go through for the first time, this was the temple I wanted to do that in.  It was a very special moment.  My bishop knew that I was ready to go through the temple even though I had almost a year before I would go on a mission.  He let me get my recommend so that I could go through at the same time my brothers, Josh and Jer, went through before thier mission.  "
+        "content": "I have always loved the Salt Lake Temple.  This meant that when it was time for me to go through for the first time, this was the temple I wanted to do that in.  It was a very special moment.  My bishop knew that I was ready to go through the temple even though I had almost a year before I would go on a mission.  He let me get my recommend so that I could go through at the same time my brothers (who are twins) went through before thier mission.  "
     },
     {
         "id": "slc-2",
@@ -28,14 +28,14 @@
         "id": "oquirrh",
         "templeId": 4,
         "date": "2025-05-13",
-        "title": "Jamison's Endowment",
+        "title": "My Nephew's Endowment",
         "content": "I got a sweet two for one travel experience with the Oquirrh Mountain Temple one day and the Draper Temple the next.  I travelled to Utah to go to my niece's wedding and got to go to the Oquirrh Mountain temple the day before to go through with my nephew on his first temple endowment experience."
     },
     {
         "id": "draper",
         "templeId": 5,
         "date": "2025-05-14",
-        "title": "Makenna's Wedding",
+        "title": "My Niece's Wedding",
         "content": "What a way to experience a temple, going to it for a wedding.  My niece Makenna got married May 14, 2025 and I got to go be there for it.  One of the most amazing things about this temple is the views you have from the grounds, you can see the whole Salt Lake valley!"
     },
     {
@@ -54,26 +54,26 @@
         "id": "bountiful",
         "templeId": 8,
         "date": "1999-02-13",
-        "title": "Dani's Wedding",
-        "content": "Dani got married in the Bountiful Utah Temple on February 13, 1999.  Dani is one of my best friends and the person I met my husband Brad through.  I remember wondering why they chose the Bountiful temple, but it wasn't hard to guess, this is a beautiful temple.  I remember all the plants and flowers outside were gorgeous."
+        "title": "My Best Friend's Wedding",
+        "content": "My friend got married in the Bountiful Utah Temple on February 13, 1999.  She is one of my best friends and the person I met my husband, Brad, through.  I remember wondering why they chose the Bountiful temple, but it wasn't hard to guess, this is a beautiful temple.  I remember all the plants and flowers outside were gorgeous."
     },
     {
         "id": "Ogden",
         "templeId": 9,
         "title": "Temple Challenge",
-        "content": "I honestly don't remember much about my visit to the Ogden temple.  It was in the time before my mission.  I had given myself the challenge to go to all the temples in Utah before my mission.  I didn't make it to the St. George temple and I'm not sure I made it up to Logan, but I did make it to the Ogden Temple.  I probably went with Mark Wride because he was my temple buddy before the mission."
+        "content": "I honestly don't remember much about my visit to the Ogden temple.  It was in the time before my mission.  I had given myself the challenge to go to all the temples in Utah before my mission.  I didn't make it to the St. George temple and I'm not sure I made it up to Logan, but I did make it to the Ogden Temple.  I probably went with my temple buddy before the mission.  Most of my friends at the time were away, but I had one that he and I went to the temple almost weekly."
     },
     {
         "id": "provo",
         "templeId": 10,
         "title": "MTC Temple",
-        "content": "I got to go to the Provo temple several times as a new missionary while I was in the MTC.  I remember being with Sister Larsen, my MTC companion, who I would also later be companions with at the end of our missions.  The thing that struck me most about this temple was the HUGE picture of Christ that was in the celestial room."
+        "content": "I got to go to the Provo temple several times as a new missionary while I was in the MTC.  I remember being with my MTC companion, who I would also later be companions with at the end of our missions.  The thing that struck me most about this temple was the HUGE picture of Christ that was in the celestial room.  I hope it is still there after the renovations."
     },
     {
         "id": "Denver",
         "templeId": 11,
         "title": "First Temple Outside of Utah",
-        "content": "When Brad and I were first married we lived with my in-laws.  So during those few months we went to the Denver Temple.  This was my first time being in a temple outside of Utah and I loved it.  One thing that made this temple special to me was that it was close to where Allison, my adopted sister, lived with her family.  They attended the open house to see inside it before it was dedicated."
+        "content": "When Brad and I were first married we lived with my in-laws.  So during those few months we went to the Denver Temple.  This was my first time being in a temple outside of Utah and I loved it.  One thing that made this temple special to me was that it was close to where my adopted sister lived with her familybefore we adopted her.  They attended the open house to see inside it before it was dedicated."
     },
     {
         "id": "gilbert",
@@ -91,25 +91,25 @@
         "id": "mesa-1",
         "templeId": 14,
         "title": "Crystal Chandeliers",
-        "content": "During the renovation of the Mesa Temple I was invited to go and help put the crystals in the chandeliers in two of the sealing rooms.  My good friend Jean Porter invited me to come.  Her son was in charge of the construction on the temple so she got the special priviledge to participate in some of the decorating.  The chandeliers were gold in color and the crystals were Swarovski crystals.  It was really intricate work.  It has been so much fun to go back and see where I participated in the beautification of that temple."
+        "content": "During the renovation of the Mesa Temple I was invited to go and help put the crystals in the chandeliers in two of the sealing rooms.  I had a good friend invited me to come help with it.  Her son was in charge of the construction on the temple so she got the special priviledge to participate in some of the decorating.  The chandeliers were gold in color and the crystals were Swarovski crystals.  It was really intricate work.  It has been so much fun to go back and see where I participated in the beautification of that temple."
     },
     {
         "id": "mesa-2",
         "templeId": 14,
-        "title": "English Family Sealing",
-        "content": "I had the privledge of being part of the sealing of Joan and Ray English to each other and to their son Caleb.  It was such a beautiful ceremony.  I will never forget the hug I got from Joan afterwards and how she told me she loved my smile.  Meant the world to me to be able to participate in that event."
+        "title": "Freind's Family Sealing",
+        "content": "I had the privledge of being part of the sealing of my friend's sealing to each other and to their son.  It was such a beautiful ceremony.  I will never forget the hug I got from her afterwards and how she told me she loved my smile.  Meant the world to me to be able to participate in that event."
     },
     {
         "id": "mesa-3",
         "templeId": 14,
         "title": "Temple Rededication Open House",
-        "content": "Another memorable experience I have had at the Mesa Arizona Temple was that of going to the open house they had after the renovation was done.  It was late November, early December of 2021.  We went with mom and dad and Allison.  I think Shannon and Josh were there and I vaguely remember Brad having one of his friends with him as well.  I was in a wheelchair cause my feet were still being stupid and I couldn't walk that far.  So I didn't get to see some parts of the temple that aren't as wheelchair friendly.  But I was with mom and dad and I am so grateful for that memory, especially with dad."
+        "content": "Another memorable experience I have had at the Mesa Arizona Temple was that of going to the open house they had after the renovation was done.  It was late November, early December of 2021.  We went with mom and dad and little sister.  I think my other sister and her husband were there and I vaguely remember Brad having one of his friends with him as well.  I was in a wheelchair cause my feet were still being stupid and I couldn't walk that far.  So I didn't get to see some parts of the temple that aren't as wheelchair friendly.  But I was with mom and dad and I am so grateful for that memory, especially with dad."
     },
     {
         "id": "newport",
         "templeId": 15,
-        "title": "Foy Wedding",
-        "content": "I don't remember why I went out to attend my cousin's wedding.  I can't remember if it was Brooks or Brody.  One thing I do remember about going was how beautiful the temple was, also the location was so great.  I love being in the temple in beautiful places."
+        "title": "My Cousin's Wedding",
+        "content": "I don't remember why I went out to attend my cousin's wedding.  I can't remember exactly which one of my cousin's it was (there are two boys in that family).  One thing I do remember about going was how beautiful the temple was, also the location was so great.  I love being in the temple in beautiful places."
     },
     {
         "id": "orlando",
@@ -127,7 +127,7 @@
         "id": "dc",
         "templeId": 18,
         "title": "Washington Wonder",
-        "content": "The Washington DC Temple is breathtaking.  We had decided to do an east coast trip for the summer of 2008.  Isaak wanted to see the Statue of Liberty, he chose that over going to Disney World.  So we went to Delaware, Philadelphia, New York City and Washington DC.  I remember driving on the freeway and coming up on it, what a sight!  Brad and I went and did a session, but I don't remember what we did with Isaak and Mica, my guess is that Georgann watched them."
+        "content": "The Washington DC Temple is breathtaking.  We had decided to do an east coast trip for the summer of 2008.  My son wanted to see the Statue of Liberty, he chose that over going to Disney World.  So we went to Delaware, Philadelphia, New York City and Washington DC.  I remember driving on the freeway and coming up on it, what a sight!  Brad and I went and did a session, luckily my mother-in-law was there to watch our two kiddos at the time."
     },
     {
         "id": "diego",
