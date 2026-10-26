@@ -1,73 +1,69 @@
-// Cache for API responses
-const DATA_CACHE_KEY = 'temple-stories-data';
+//stories visitors write are saved in their own browser under this key
+const MY_STORIES_KEY = 'myStories';
 
-// Debounce timer for filtering
-let filterDebounce;
+let allTemples = [];
+let allStories = [];
 
 document.addEventListener('DOMContentLoaded', async function () {
-    // Load data with caching
-    const [temples, stories] = await Promise.all([
-        fetchWithCache('data/temples.json'),
-        fetchWithCache('data/stories.json')
+    //remove copies saved by the old one-hour cache
+    localStorage.removeItem('temple-stories-data-data/temples.json');
+    localStorage.removeItem('temple-stories-data-data/stories.json');
+
+    const [temples, siteStories] = await Promise.all([
+        fetchJson('data/temples.json'),
+        fetchJson('data/stories.json')
     ]);
 
-    // Initialize page
-    setupFilters(temples);
-    displayStories(stories, temples, 5); // Only show 5 stories initially
+    allTemples = temples;
+    allStories = [...siteStories, ...getMyStories()];
+
+    setupFilters();
+    displayStories(allStories, allTemples, 5); 
 });
 
-// Cache-first data fetching
-async function fetchWithCache(url) {
+async function fetchJson(url) {
     try {
-        // Check cache
-        const cached = localStorage.getItem(`${DATA_CACHE_KEY}-${url}`);
-        if (cached) {
-            const { data, timestamp } = JSON.parse(cached);
-            // Use cache if < 1 hour old
-            if (Date.now() - timestamp < 3600000) return data;
-        }
-
-        // Fetch fresh data
         const response = await fetch(url);
-        if (!response.ok) throw new Error('Network error');
-        const data = await response.json();
-
-        // Update cache
-        localStorage.setItem(`${DATA_CACHE_KEY}-${url}`, JSON.stringify({
-            data,
-            timestamp: Date.now()
-        }));
-
-        return data;
+        if (!response.ok) throw new Error(`${url} returned ${response.status}`);
+        return await response.json();
     } catch (error) {
         console.error('Fetch error:', error);
         return [];
     }
 }
 
-// Filter setup with debouncing
-function setupFilters(temples) {
+function getMyStories() {
+    try {
+        return JSON.parse(localStorage.getItem(MY_STORIES_KEY)) || [];
+    } catch {
+        return [];
+    }
+}
+
+function saveMyStory(story) {
+    const myStories = getMyStories();
+    myStories.push(story);
+    localStorage.setItem(MY_STORIES_KEY, JSON.stringify(myStories));
+}
+
+function setupFilters() {
     const templeFilter = document.getElementById('temple-filter');
     const storyTempleSelect = document.getElementById('story-temple');
 
-    temples.forEach(temple => {
+    allTemples.forEach(temple => {
         if (temple.status === 'visited') {
             const option = new Option(temple.name, temple.id);
-            templeFilter.add(option.cloneNode(true));
-            storyTempleSelect.add(option);
+            templeFilter.addEventListener(option.cloneNode(true));
+            storyTempleSelect.addEventListener(option);
         }
     });
 
     templeFilter.addEventListener('change', (e) => {
-        clearTimeout(filterDebounce);
-        filterDebounce = setTimeout(() => {
-            const templeId = e.target.value;
-            const stories = JSON.parse(localStorage.getItem(`${DATA_CACHE_KEY}-data/stories.json`))?.data || [];
-            const filtered = templeId === 'all'
-                ? stories
-                : stories.filter(s => s.templeId == templeId);
-            displayStories(filtered, temples, 5);
-        }, 300);
+        const templeId = e.target.value;
+        const filtered = templeId === 'all'
+            ? allStories
+            : allStories.filter(s => s.templeId == templeId);
+        displayStories(filtered, allTemples, 5);
     });
 }
 
@@ -181,15 +177,9 @@ document.getElementById('story-form')?.addEventListener('submit', async function
     };
 
     try {
-        // Update cached stories
-        const cacheKey = `${DATA_CACHE_KEY}-data/stories.json`;
-        const cached = JSON.parse(localStorage.getItem(cacheKey)) || { data: [] };
-        cached.data.push(newStory);
-        localStorage.setItem(cacheKey, JSON.stringify(cached));
-
-        // Refresh display
-        const temples = await fetchWithCache('data/temples.json');
-        displayStories(cached.data, temples, 5);
+        saveMyStory(newStory);
+        allStories.push(newStory);
+        displayStories(allStories, allTemples, 5);
 
         this.reset();
         localStorage.removeItem('storyDraft');
