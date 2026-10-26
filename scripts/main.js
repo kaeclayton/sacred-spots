@@ -63,6 +63,7 @@ function initGallery(temples) {
             img.loading = 'lazy';
             img.src = temple.image;
             img.onerror = () => {
+                img.onerror = null;
                 img.src = temple.imageFallback || 'images/default-temple.jpg';
             };
         }

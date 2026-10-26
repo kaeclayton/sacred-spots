@@ -180,7 +180,7 @@
         "dedication": "1972-01-18",
         "size": "112,232 sq ft",
         "image": "images/ogden-utah-temple.webp",
-        "imageFallback": "images/odgen-utah-temple.jpg",
+        "imageFallback": "images/ogden-utah-temple.jpg",
         "architecturalStyle": "Modern/Classical",
         "features": [
             "Large stained glass windows in celestial room",
@@ -729,7 +729,8 @@
         },
         "dedication": "2019-03-10",
         "size": "41,010 sq ft",
-        "image": ".jpg",
+        "image": "images/rome-italy-temple.webp",
+        "imageFallback": "images/rome-italy-temple.jpg",
         "architecturalStyle": "Neoclassical with Roman elements",
         "features": [
             "Carrara marble exterior",
