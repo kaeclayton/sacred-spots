@@ -53,8 +53,8 @@ function setupFilters() {
     allTemples.forEach(temple => {
         if (temple.status === 'visited') {
             const option = new Option(temple.name, temple.id);
-            templeFilter.addEventListener(option.cloneNode(true));
-            storyTempleSelect.addEventListener(option);
+            templeFilter.add(option.cloneNode(true));
+            storyTempleSelect.add(option);
         }
     });
 
