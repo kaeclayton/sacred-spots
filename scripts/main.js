@@ -138,8 +138,8 @@ function showError(message) {
 }
 
 function formatDate(dateString) {
-    if (!dateString || isNaN(new Date(dateString))) return 'Unknown date';
-    return new Date(dateString).toLocaleDateString(undefined, {
+    if (!dateString || isNaN(new Date(dateString + 'T00:00'))) return 'Unknown date';
+    return new Date(dateString + 'T00:00').toLocaleDateString(undefined, {
         year: 'numeric',
         month: 'long',
         day: 'numeric'
