@@ -30,7 +30,7 @@ function showLinkedStory() {
     const story = allStories.find(s => String(s.id) === storyId);
     if (!story) return;
 
-    //Show only that story's temple, with all of its stories, so the linked one is on
+    //Show only that story's temple, with all of its stories, so the linked one is on the page
     document.getElementById('temple-filter').value = story.templeId;
     displayStories(allStories.filter(s => s.templeId === story.templeId), allTemples, Infinity);
 
