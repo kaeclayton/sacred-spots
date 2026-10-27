@@ -191,6 +191,12 @@ button[type="submit"]:active {
     transform: translateY(0);
 }
 
+/* Story opened from a "Read Full Story" link */
+.story-card.highlighted {
+    outline: 3px solid var(--plum);
+    outline-offset: 4px;
+}
+
 /* Responsive adjustments */
 @media (min-width: 768px) {
     .add-story {

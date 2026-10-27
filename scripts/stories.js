@@ -19,7 +19,27 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     setupFilters();
     displayStories(allStories, allTemples, 5); 
+    showLinkedStory();
 });
+
+// If the page was opened with ?story=<id>, show and highlight that story
+function showLinkedStory() {
+    const storyId = new URLSearchParams(window, location.search).get('story');
+    if (!storyId) return;
+
+    const story = allStories.find(s => String(s.id) === storyId);
+    if (!story) return;
+
+    //Show only that story's temple, with all of its stories, so the linked one is on
+    document.getElementById('temple-filter').value = story.templeId;
+    displayStories(allStories.filter(s => s.templeId === story.templeId), allTemples, Infinity);
+
+    const card = document.getElementById(`story-${story.id}`);
+    if (card) {
+        card.classList.add('highlighted');
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+}
 
 async function fetchJson(url) {
     try {
@@ -134,7 +154,7 @@ function displayStories(stories, temples, initialLimit = 5) {
 // Individual story card renderer
 function renderStoryCard(story) {
     return `
-        <article class="story-card">
+        <article class="story-card" id="story-${story.id}">
             ${story.date ? `<div class="story-date">${formatDate(story.date)}</div>` : ''}
             <h3>${story.title}</h3>
             <p>${story.content}</p>
@@ -172,8 +192,7 @@ document.getElementById('story-form')?.addEventListener('submit', async function
         templeId: parseInt(this.elements['story-temple'].value),
         date: this.elements['story-date'].value || null,
         title: this.elements['story-title'].value,
-        content: this.elements['story-content'].value,
-        image: '' // Placeholder for image uploads
+        content: this.elements['story-content'].value
     };
 
     try {
