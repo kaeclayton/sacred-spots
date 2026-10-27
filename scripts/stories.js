@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
 // If the page was opened with ?story=<id>, show and highlight that story
 function showLinkedStory() {
-    const storyId = new URLSearchParams(window, location.search).get('story');
+    const storyId = new URLSearchParams(window.location.search).get('story');
     if (!storyId) return;
 
     const story = allStories.find(s => String(s.id) === storyId);
