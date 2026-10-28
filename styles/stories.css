@@ -71,7 +71,7 @@ header {
 .story-card h2 {
     color: var(--plum);
     font-size: 1.25rem;
-    margin: 0 0 0.75rem;
+    margin: 0 0 0.25rem;
 }
 .story-temple {
     color: var(--jade);
@@ -79,7 +79,7 @@ header {
     font-weight: bold;
     letter-spacing: 0.05 rem;
     text-transform: uppercase;
-    margin: 0 0 0.25rem;
+    margin: 0 0 0.75rem;
 }
 .story-card img {
     width: 100%;

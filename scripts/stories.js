@@ -138,10 +138,14 @@ function renderStoryCard(story, templeName) {
     card.className = 'story-card';
     card.id = `story-${story.id}`;
 
+    const title = document.createElement('h2');
+    title.textContent = story.title;
+
     const temple = document.createElement('p');
     temple.className = 'story-temple';
     temple.textContent = templeName;
-    card.appendChild(temple);
+
+    card.append(title, temple);
 
     if (story.date) {
         const date = document.createElement('p');
@@ -150,13 +154,9 @@ function renderStoryCard(story, templeName) {
         card.appendChild(date);
     }
 
-    const title = document.createElement('h2');
-    title.textContent = story.title;
-
     const content = document.createElement('p');
     content.textContent = story.content;
-
-    card.append(title, content);
+    card.appendChild(content);
 
     if (story.image) {
         const img = document.createElement('img');
