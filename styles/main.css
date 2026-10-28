@@ -50,12 +50,17 @@ header {
 
 header nav {
     margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 1.5rem;
 }
+
 
 header nav a {
     color: var(--cream);
-    margin: 0 1rem;
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
+    white-space: nowrap;
     text-decoration: none;
     font-weight: 600;
     transition: opacity 0.3s ease;
@@ -77,7 +82,7 @@ footer {
 /* Gallery Container */
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
     gap: 2rem;
     padding: 2rem;
     max-width: 1200px;
