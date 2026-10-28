@@ -87,88 +87,89 @@ function setupFilters() {
     });
 }
 
-// Optimized story display with lazy loading
-function displayStories(stories, temples, initialLimit = 5) {
+// Story display: one grid of cards, each labeled with it's temple
+const STORIES_PER_PAGE = 9;
+
+function displayStories(stories, temples, limit = STORIES_PER_PAGE) {
     const container = document.getElementById('stories-list');
     if (!container) return;
 
-    // Group and sort stories
-    const grouped = stories.reduce((acc, story) => {
-        const temple = temples.find(t => t.id === story.templeId);
-        if (!temple) return acc;
+    // Look up each temple's name by it's id
+    const templeNames = new Map(temples.map(t => [t.id, t.name]));
 
-        acc[temple.name] = acc[temple.name] || [];
-        acc[temple.name].push(story);
-        return acc;
-    }, {});
+    //Keep stories with a known temple, sorted by temple name
+    const sorted = stories
+        .filter(story => templeNames.has(story.templeId))
+        .sort((a, b) => templeNames.get(a.templeId).localeCompare(templeNames.get(b.templeId)));
+    
+    if (sorted.length === 0) {
+        const message = document.createElement('p');
+        message.textContent = 'No stories found.  Be the first to share!';
+        container.replaceChildren(message);
+        return;
+    }
 
-    const sortedTempleNames = Object.keys(grouped).sort();
+    const grid = document.createElement('div');
+    grid.className = 'story-grid';
 
-    // Build HTML
-    let html = '';
-    sortedTempleNames.forEach(templeName => {
-        html += `<section class="temple-stories">
-                   <h2>${templeName}</h2>
-                   <div class="story-cards">`;
+    const loadMore = document.createElement('button');
+    loadMore.type = 'button';
+    loadMore.className = 'load-more';
+    loadMore.textContent = 'Load more stories';
 
-        grouped[templeName].slice(0, initialLimit).forEach(story => {
-            html += renderStoryCard(story);
+    container.replaceChildren(grid, loadMore);
+
+    let shown = 0;
+    function showNext(count) {
+        sorted.slice(shown, shown + count).forEach(story => {
+            grid.appendChild(renderStoryCard(story, templeNames.get(story.temppleId)));
         });
+        shown += count;
+        if (shown >= sorted.length) loadMore.remove();
+    }
 
-        // Add "Load More" if needed
-        if (grouped[templeName].length > initialLimit) {
-            html += `<button class="load-more" 
-                            data-temple="${templeName}" 
-                            data-offset="${initialLimit}"
-                            aria-label="Load more stories">
-                        Load More
-                    </button>`;
-        }
-
-        html += `</div></section>`;
-    });
-
-    container.innerHTML = html || '<p>No stories found. Be the first to share!</p>';
-
-    // Set up "Load More" handlers
-    document.querySelectorAll('.load-more').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            const templeName = e.target.dataset.temple;
-            const offset = parseInt(e.target.dataset.offset);
-            const additionalStories = grouped[templeName].slice(offset, offset + 3); // Load 3 more
-
-            additionalStories.forEach(story => {
-                e.target.insertAdjacentHTML('beforebegin', renderStoryCard(story));
-            });
-
-            // Update button
-            if (offset + 3 >= grouped[templeName].length) {
-                e.target.remove();
-            } else {
-                e.target.dataset.offset = offset + 3;
-            }
-        });
-    });
+    loadMore.addEventListener('click', () => showNext(STORIES_PER_PAGE));
+    showNext(limit);
 }
 
-// Individual story card renderer
-function renderStoryCard(story) {
-    return `
-        <article class="story-card" id="story-${story.id}">
-            ${story.date ? `<div class="story-date">${formatDate(story.date)}</div>` : ''}
-            <h3>${story.title}</h3>
-            <p>${story.content}</p>
-            ${story.image ? `
-                <img src="${story.image.replace('.jpg', '-600.webp')}" 
-                     srcset="${story.image.replace('.jpg', '-300.webp')} 300w,
-                             ${story.image.replace('.jpg', '-600.webp')} 600w"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                     width="600"
-                     height="400"
-                     loading="lazy"
-                     alt="${story.title}">
-            ` : ''}
-        </article>`;
+// Build one story card
+function renderStoryCard(story, templeName) {
+    const card = document.createElement('article');
+    card.className = 'story-card';
+    card.id = `story-${story.id}`;
+
+    const temple = document.createElement('p');
+    temple.className = 'story-temple';
+    temple.textContent = templeName;
+    card.appendChild(temple);
+
+    if (story.date) {
+        const date = document.createElement('p');
+        date.className = 'story-date';
+        date.textContent = formatDate(story.date);
+        card.appendChild(date);
+    }
+
+    const title = document.createElement('h2');
+    title.textContent = story.title;
+
+    const content = document.createElement('p');
+    content.textContent = story.content;
+
+    card.append(title, content);
+
+    if (story.image) {
+        const img = document.createElement('img');
+        img.src = story.image.replace('.jpg', '-600.webp');
+        img.srcset = `${story.image.replace('.jpg', '-300.webp')} 300w, ${story.image.replace('.jpg', '-600.webp')} 600w`;
+        img.sizes = '(max-width: 768px) 100vw, 50vw';
+        img.width = 600;
+        img.height = 400;
+        img.alt = story.title;
+        card.appendChild(img);
+    }
+
+    return card;
 }
 
 // Date formatting helper
