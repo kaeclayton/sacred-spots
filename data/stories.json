@@ -73,13 +73,19 @@
         "id": "Denver",
         "templeId": 11,
         "title": "First Temple Outside of Utah",
-        "content": "When Brad and I were first married we lived with my in-laws.  So during those few months we went to the Denver Temple.  This was my first time being in a temple outside of Utah and I loved it.  One thing that made this temple special to me was that it was close to where my adopted sister lived with her familybefore we adopted her.  They attended the open house to see inside it before it was dedicated."
+        "content": "When Brad and I were first married we lived with my in-laws.  So during those few months we went to the Denver Temple.  This was my first time being in a temple outside of Utah and I loved it.  One thing that made this temple special to me was that it was close to where my adopted sister lived with her family before we adopted her.  They attended the open house to see inside it before it was dedicated."
     },
     {
-        "id": "gilbert",
+        "id": "gilbert-1",
         "templeId": 12,
         "title": "Temple Celebration",
-        "content": "The Gilbert Temple holds a special place in my heart because of many reasons.  One is that it was built while I lived here and my kids got to go through the open house, my son participated in the youth celebration just before it was dedicated and it is where he recieved his endowment."
+        "content": "The Gilbert Temple holds a special place in my heart because of many reasons.  One is that it was built while I lived here and my kids got to go through the open house, my son participated in the youth celebration just before it was dedicated and it is where he received his endowment and got married."
+    },
+    {
+        "id": "gilbert-2",
+        "templeId": 12,
+        "title": "Temple Cleaning",
+        "content": "In September of 2025 Brad and I volunteered to help with our stake's cleaning assignment of the Gilbert Temple.  During the safety orientation the two of us were not sitting together for some reason.  They began talking about how they needed more cleaning helper temple workers.  This cleaning is done from 8:45 pm to about 11:45 pm and it would be a 1 to 2 year calling.  I felt very strongly as they were talking about it that I wanted to volunteer.  As soon as the meeting was over I went to Brad to tell him I thought we should do that, when he told me he had the same impression.  So September 24, 2025 we went and were set apart as housekeeping temple workers.  It has been a wonderful experience and we don't plan to stop going every Monday night to help out as long as we live near the temple."
     },
     {
         "id": "laie",

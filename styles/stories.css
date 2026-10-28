@@ -56,36 +56,50 @@ header {
     flex-direction: column;
     gap: 3rem;
 }
-
-.temple-stories {
+.story-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    margin-top: 1rem;
+}
+.story-card {
     background: white;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
     box-shadow: var(--soft-shadow);
 }
-
-.story-cards {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    margin-top: 1.5rem;
-}
-
-.story-card {
-    padding: 1.5rem;
-    border: 1px solid #eee;
-    border-radius: 4px;
-}
-
-.story-card h3 {
+.story-card h2 {
     color: var(--plum);
-    margin-top: 0;
+    font-size: 1.25rem;
+    margin: 0 0 0.75rem;
 }
-
+.story-temple {
+    color: var(--jade);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.05 rem;
+    text-transform: uppercase;
+    margin: 0 0 0.25rem;
+}
 .story-card img {
     width: 100%;
+    height: auto;
     border-radius: 4px;
     margin-top: 1rem;
+}
+.load-more {
+    align-self: center;
+    background-color: var(--plum);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding:0.75rem 2rem;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+.load-more:hover {
+    background-color: #5a0a9a;
 }
 .add-story {
     display: block;

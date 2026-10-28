@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     allStories = [...siteStories, ...getMyStories()];
 
     setupFilters();
-    displayStories(allStories, allTemples, 5); 
+    displayStories(allStories, allTemples); 
     showLinkedStory();
 });
 
@@ -83,7 +83,7 @@ function setupFilters() {
         const filtered = templeId === 'all'
             ? allStories
             : allStories.filter(s => s.templeId == templeId);
-        displayStories(filtered, allTemples, 5);
+        displayStories(filtered, allTemples);
     });
 }
 
@@ -199,7 +199,7 @@ document.getElementById('story-form')?.addEventListener('submit', async function
     try {
         saveMyStory(newStory);
         allStories.push(newStory);
-        displayStories(allStories, allTemples, 5);
+        displayStories(allStories, allTemples);
 
         this.reset();
         localStorage.removeItem('storyDraft');
