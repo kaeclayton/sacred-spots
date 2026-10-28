@@ -59,7 +59,7 @@ header {
 .story-grid {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: 1fr;
     margin-top: 1rem;
 }
 .story-card {
@@ -212,15 +212,24 @@ button[type="submit"]:active {
 }
 
 /* Responsive adjustments */
+@media (min-width: 640px){
+    .story-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 @media (min-width: 768px) {
     .add-story {
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
     }
-
     button[type="submit"] {
         width: auto;
         padding: 1rem 3rem;
+    }
+}
+@media (min-width: 960px){
+    .story-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
