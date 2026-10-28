@@ -102,16 +102,28 @@ async function loadHomePageData(temples) {
         document.getElementById('future-count').textContent =
             temples.filter(t => t.status === 'wish list').length;
 
-        // Featured story
+        // Featured story: a different one each day
         if (stories.length) {
-            const featuredStory = stories.reduce((latest, story) =>
-                new Date(story.date || 0) > new Date(latest.date || 0) ? story : latest
-            );
+            // Count of days since 1970 in the visitor's time zone, so it changes at local midnight
+            const now = new Date();
+            const dayNumber = Math.floor((now.getTime() - now.getTimezoneOffset() * 60000) / 86400000);
+            const featuredStory = stories[dayNumber % stories.length];
+
             document.getElementById('featured-story-title').textContent = featuredStory.title;
-            document.getElementById('featured-story-excerpt').textContent =
-                featuredStory.content.substring(0, 150) + '...';
-            document.getElementById('featured-story-link').href =
-                `stories.html?story=${featuredStory.id}`;
+            document.getElementById('featured-story-excerpt').textContent = featuredStory.content.substring(0, 150) + '...';
+            document.getElementById('featured-story-link').href = `stories.html?story=${featuredStory.id}`;
+
+            //Show the photo of that story's temple
+            const temple = temples.find(t => t.id === featuredStory.templeId);
+            if (temple) {
+                const img = document.getElementById('featured-story-image');
+                img.onerror = () => {
+                    img.onerror = null;
+                    if (temple.imageFallback) img.src = temple.imageFallback;
+                };
+                img.src = temple.image;
+                img.alt = temple.name;
+            }
         }
 
     } catch (error) {

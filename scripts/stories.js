@@ -122,7 +122,7 @@ function displayStories(stories, temples, limit = STORIES_PER_PAGE) {
     let shown = 0;
     function showNext(count) {
         sorted.slice(shown, shown + count).forEach(story => {
-            grid.appendChild(renderStoryCard(story, templeNames.get(story.temppleId)));
+            grid.appendChild(renderStoryCard(story, templeNames.get(story.templeId)));
         });
         shown += count;
         if (shown >= sorted.length) loadMore.remove();
